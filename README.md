@@ -31,8 +31,7 @@ yarn install
 
 ```bash
 ## Start the dev babel server 
-npm dev-server
-
+npm start
 ```
 
 
