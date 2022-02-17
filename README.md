@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Build-Burg
+## Fancy UI based application let's user build custom burger with addtion of ingrediants as per their need .  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+  - User can build custom burger with thier preference of ingrediants.
+  - 4 ingrediants option available.
+  - Price of burger increase/decrease in realtime as user changes quantity.
+  - User have order history available to view all own orders.
+  - Authentication and Authorization is done by google Authentication service.
+  - Database is Firebase Realtime database with user identity encryption
 
-## Available Scripts
+## Getting started
+### Development Setup
 
-In the project directory, you can run:
+After cloning the repository, execute the following commands in the root folder:
 
-### `npm start`
+1. Install dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#or
 
-### `npm test`
+yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#or
 
-### `npm run build`
+yarn install
+```
+2. If you will be working on the components source code, you can use the following command to start the webpack dev server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+## Start the dev babel server 
+npm dev-server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Remember that these commands must be executed in the root folder of the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Create a branch for your feature or fix:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Move into a new branch for your feature
+git checkout -b feat/thing
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Move into a new branch for your fix
+git checkout -b fix/something
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. If your code passes all the tests, then push your feature/fix branch:
 
-## Learn More
+All commits that fix bugs or add features need a test.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+# Test current code
+yarn test:update # or npm run test:update
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+5. Be sure the package builds.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+# Build current code
+yarn build # or npm run build
+```
 
-### Analyzing the Bundle Size
+> Note: ensure your version of Node is 14 or higher to run scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. Send your pull request:
 
-### Making a Progressive Web App
+- You must send your pull request to the `staging` branch
+- Your pull request will be reviewed by the maintainers and the maintainers will decide if it is accepted or not
+- Once the pull request is accepted, the maintainers will merge it to the `main` branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
+I welcome pull requests, bug fixes and issue reports. Before proposing a change, please discuss your change by raising an issue.
 
-### Advanced Configuration
+## Maintainer 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Ghuge Saurabh](https://www.linkedin.com/in/saurabh-ghuge-02a681176/)
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](LICENSE) © Ghuge Saurabh
